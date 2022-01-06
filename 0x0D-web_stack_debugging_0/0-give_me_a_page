@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Fixes the issue with the web server
-CONTAINER_ID=$(sudo docker ps | grep 'holbertonschool/265-0' | cut -d ' ' -f1)
-docker exec -i "$CONTAINER_ID" /bin/bash -c "sudo service apache start"
+echo 'Hello Holberton' > /var/www/html/index.html
+sudo service apache2 start
